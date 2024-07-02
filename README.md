@@ -1,18 +1,18 @@
-# Sudoko_puzzle
-Project Description:
-This project aims to implement a Sudoku Solver using a backtracking algorithm in C++. The solver reads a 9x9 Sudoku puzzle from standard input, validates the placement of numbers based on standard Sudoku rules, utilizes backtracking to find a solution, and prints the solved puzzle if a solution exists.
+Sudoku Solver
 
-Key Features:
+Overview :
 
-Solves a 9x9 Sudoku puzzle.
+This project implements a Sudoku Solver using a backtracking algorithm in C++. The solver reads a Sudoku puzzle from standard input, attempts to solve it, and prints the solved puzzle if a solution exists.
 
-Validates number placements according to Sudoku rules.
+Features:
 
-Uses backtracking for efficient solution finding.
-
+1.Solves a 9x9 Sudoku puzzle.
+2.Validates the placement of numbers using standard Sudoku rules.
+3.Utilizes backtracking to find a solution.
 Usage:
 
-Enter the Sudoku puzzle (use 0 for empty cells):
+Run the executable and enter the Sudoku puzzle (use 0 for empty cells):
+
 
 5 3 0 0 7 0 0 0 0
 6 0 0 1 9 5 0 0 0
@@ -42,14 +42,19 @@ If no solution exists, the following message will be displayed:
 
 No solution exists for the given Sudoku puzzle.
 
-Code Explanation
-Functions
+Code Explanation:
 
-void print(int board[9][9], int n): Prints the Sudoku board.
+Functions:
 
-bool isValid(int board[9][9], int i, int j, int num, int n): Checks if placing a number at the given position is valid.
+1. void print(int board[9][9], int n): Prints the Sudoku board.
 
-bool SudokuSolver(int board[9][9], int i, int j, int n): Solves the Sudoku puzzle using backtracking.
+2. bool isValid(int board[9][9], int i, int j, int num, int n): Checks if placing a number at the given position is valid.
+ 
+3. bool SudokuSolver(int board[9][9], int i, int j, int n): Solves the Sudoku puzzle using backtracking.
+ 
+4. int main(): Reads the Sudoku puzzle, calls the solver, and prints the result.
 
-int main(): Reads the Sudoku puzzle, calls the solver, and prints the result.
+Contributing:
+
+Contributions are welcome! Please fork the repository and create a pull request with your changes.
 
